@@ -195,7 +195,7 @@
 				)
 			)
 			(property "Footprint" "WaferSpace:waferspace_p5xp5_padring"
-				(at 0 0 0)
+				(at 17.78 -14.224 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1266,6 +1266,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "0p5x0p5_1_0"
+				(pin power_in line
+					(at 36.83 0 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -3185,6 +3205,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 99.06) (xy 215.9 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c33d1c-270a-4f69-9492-58cd3fbb1dab")
+	)
+	(wire
+		(pts
 			(xy 38.1 80.01) (xy 38.1 97.79)
 		)
 		(stroke
@@ -4361,6 +4391,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 215.9 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08d0074e-3ae6-42bb-8fd1-1b9f638c6713")
+		(property "Reference" "#PWR010"
+			(at 215.9 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c06ab21a-2ec8-4e38-939d-13b825e3d436")
+		)
+		(instances
+			(project "0p5x0p5-cob"
+				(path "/f44d2c8c-cc6e-4ce2-9d41-a48405cdfa9d"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 152.4 143.51 0)
 		(unit 1)
@@ -4704,7 +4812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WaferSpace:waferspace_p5xp5_padring"
+		(property "Footprint" "WaferSpace:waferspace_p5xp5_padring_staggered"
 			(at 179.07 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4907,6 +5015,9 @@
 		)
 		(pin "16"
 			(uuid "fa64c34d-ad20-41a6-a63b-d50aa578f56d")
+		)
+		(pin "58"
+			(uuid "7e0150b6-436b-4919-8e98-694f862ae889")
 		)
 		(instances
 			(project "0p5x0p5-cob"
